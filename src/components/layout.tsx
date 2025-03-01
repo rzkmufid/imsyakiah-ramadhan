@@ -175,7 +175,8 @@ export function Layout() {
           <p className="text-sm text-muted-foreground text-center">
         Made by{' '}
         <a
-          href="https://rzkmufid.vercel.app"
+          href=""
+          // href="https://rzkmufid.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary underline"
