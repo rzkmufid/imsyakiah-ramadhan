@@ -1,16 +1,15 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { ImsakiyahData, ImsakiyahDay } from '@/services/api';
+import { ImsakiyahData } from '@/services/api';
 import { formatDate } from '@/lib/utils';
 
 interface PrayerScheduleProps {
   data: ImsakiyahData;
   currentDate: string;
-  currentTime: string;
 }
 
-export function PrayerSchedule({ data, currentDate, currentTime }: PrayerScheduleProps) {
+export function PrayerSchedule({ data, currentDate }: PrayerScheduleProps) {
   if (!data || !data.imsakiyah || data.imsakiyah.length === 0) {
     return null;
   }

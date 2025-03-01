@@ -9,7 +9,7 @@ interface TodayCardProps {
   date: string;
 }
 
-export function TodayCard({ todayData, location, date }: TodayCardProps) {
+export function TodayCard({ todayData, location }: TodayCardProps) {
   if (!todayData) return null;
 
   return (

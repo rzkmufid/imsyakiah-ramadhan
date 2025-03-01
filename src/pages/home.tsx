@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Calendar, Clock, MapPin, Table as TableIcon, Calendar as CalendarIcon, ListChecks, Moon } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { SearchForm } from '@/components/search-form';
 import { TodayCard } from '@/components/today-card';

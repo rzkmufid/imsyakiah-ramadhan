@@ -1,5 +1,5 @@
-import { Github, Mail, User, Code, Heart, Moon, BookOpen, Star, Calendar, Clock, MapPin, Instagram, Linkedin } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
+import { Github, Mail, User, Code, Moon, BookOpen, Instagram, Linkedin } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';

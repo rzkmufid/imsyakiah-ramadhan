@@ -23,6 +23,7 @@ interface FastingTrackerProps {
 export function FastingTracker({ scheduleData }: FastingTrackerProps) {
   const [fastingDays, setFastingDays] = useState<FastingDay[]>([]);
   const [fastingProgress, setFastingProgress] = useState<number>(0);
+  const [fastingDay, setFastingDay] = useState<number>(0);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [daysPerPage, setDaysPerPage] = useState<number>(10);
   const { toast } = useToast();
@@ -39,6 +40,7 @@ export function FastingTracker({ scheduleData }: FastingTrackerProps) {
     if (fastingDays.length > 0) {
       const completedDays = fastingDays.filter(day => day.completed).length;
       const progress = (completedDays / fastingDays.length) * 100;
+      setFastingDay(completedDays);
       setFastingProgress(progress);
     }
   }, [fastingDays]);
@@ -155,7 +157,7 @@ export function FastingTracker({ scheduleData }: FastingTrackerProps) {
           <div className="space-y-2">
             <Progress value={fastingProgress} className="h-2" />
             <div className="flex justify-between text-sm text-muted-foreground">
-              <span>0 hari</span>
+              <span>{fastingDay} hari</span>
               <span>{Math.round(fastingProgress)}% selesai</span>
               <span>30 hari</span>
             </div>

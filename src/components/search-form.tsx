@@ -105,27 +105,6 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
       setLocationLoading(false);
       return;
     }
-
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        // For now, we'll just show a toast since we don't have a real geolocation API
-        // In a real app, we would call an API to get the nearest city
-        toast({
-          title: "Lokasi Terdeteksi",
-          description: "Fitur ini masih dalam pengembangan. Silakan pilih lokasi secara manual.",
-        });
-        setLocationLoading(false);
-      },
-      (error) => {
-        setLocationError(`Error mendeteksi lokasi: ${error.message}`);
-        setLocationLoading(false);
-        toast({
-          title: "Error Lokasi",
-          description: `Tidak dapat mendeteksi lokasi Anda: ${error.message}`,
-          variant: "destructive",
-        });
-      }
-    );
   };
 
   return (
@@ -155,7 +134,7 @@ export function SearchForm({ onSearch, isLoading }: SearchFormProps) {
             variant="outline" 
             size="sm" 
             onClick={detectLocation}
-            disabled={locationLoading}
+            disabled={true}
             className="border-primary/50 hover:bg-primary/10"
           >
             <MapPin className="h-4 w-4 mr-2" />
