@@ -47,7 +47,7 @@ export function FastingTracker({ scheduleData }: FastingTrackerProps) {
 
   const initializeFastingTracker = () => {
     // Create fasting tracker data based on prayer times
-    const trackerData: FastingDay[] = scheduleData.map((day, index) => {
+    const trackerData: FastingDay[] = scheduleData.map((_, index) => {
       const date = new Date();
       date.setDate(date.getDate() + index);
       const dateStr = date.toLocaleDateString('id-ID', { 
