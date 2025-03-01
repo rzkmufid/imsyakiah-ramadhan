@@ -1,6 +1,6 @@
 # 📅 Imsakiyah Ramadhan
 
-![Imsakiyah Ramadhan](https://github.com/rzkmufid/imsyakiah-ramadhan/blob/main/src/img/SS.png?raw=true)
+![Imsakiyah Ramadhan](https://github.com/rzkmufid/imsyakiah-ramadhan/blob/main/src/img/SS1.png?raw=true)
 
 A modern web application for tracking Ramadan prayer times and fasting schedules for Muslims in Indonesia. Built with React, TypeScript, and Tailwind CSS.
 
@@ -27,13 +27,13 @@ A modern web application for tracking Ramadan prayer times and fasting schedules
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](https://i.ibb.co/Jt9WBLT/imsakiyah-preview.png)
+![Home Page](https://github.com/rzkmufid/imsyakiah-ramadhan/blob/main/src/img/SS1.png?raw=true)
 
 ### Prayer Schedule
-![Prayer Schedule](https://i.ibb.co/Jt9WBLT/imsakiyah-preview.png)
+![Prayer Schedule](https://github.com/rzkmufid/imsyakiah-ramadhan/blob/main/src/img/SS2.png?raw=true)
 
 ### Fasting Tracker
-![Fasting Tracker](https://i.ibb.co/Jt9WBLT/imsakiyah-preview.png)
+![Fasting Tracker](https://github.com/rzkmufid/imsyakiah-ramadhan/blob/main/src/img/SS3.png?raw=true)
 
 ## 🛠️ Installation and Setup
 
