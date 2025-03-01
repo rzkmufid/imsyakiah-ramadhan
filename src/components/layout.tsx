@@ -170,10 +170,22 @@ export function Layout() {
       <main className="flex-1 w-full">
         <Outlet />
       </main>
-      <footer className="border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row">
-          <p className="flex items-center text-sm text-muted-foreground">
-            Made by <span className="mx-1 text-primary"><a href="https://rzkmufid.vercel.app" target="_blank" rel="noopener noreferrer">Mufid</a></span> for the Muslim community • <span className="mx-1 text-primary">رمضان كريم</span>
+      <footer className="border-t py-6">
+        <div className="container flex flex-col items-center gap-2 md:h-16 md:flex-row md:justify-between">
+          <p className="text-sm text-muted-foreground text-center">
+        Made by{' '}
+        <a
+          href="https://rzkmufid.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline"
+        >
+          Mufid
+        </a>
+          </p>
+          <p className="text-sm text-muted-foreground text-center">
+        for the Muslim community •{' '}
+        <span className="text-primary">رمضان كريم</span>
           </p>
         </div>
       </footer>
